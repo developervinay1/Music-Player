@@ -16,6 +16,18 @@ let songs = [
     // Add more songs as needed
 ];
 
+
+let allSongsArray = [
+    {
+        id: 1,
+        songPath: "./songs/naar.mp3"
+    },
+    {
+        id: 2,
+        songPath: "./songs/tara.mp3"
+    }
+];
+
 let songIndex = 0;
 let audioElement = new Audio(songs[songIndex].songsPath);
 let songsList = document.getElementById("songsList");
@@ -54,6 +66,4 @@ songAudioPlayer.forEach((player) => {
     player.addEventListener("pause", () => {
         player.style.width = "20%";
     });
-})
-
-
+});

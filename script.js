@@ -36,8 +36,11 @@ const loopAudioElement = document.getElementById("loopSong");
 
 // Function to play the next song
 function playNextSong() {
+    // Getting Current Song Index
     currentSongIndex = (currentSongIndex + 1) % allSongsArray.length;
+    // updating audio loop source
     loopAudioElement.src = allSongsArray[currentSongIndex].songPath;
+    // Play the song
     loopAudioElement.play();
 }
 

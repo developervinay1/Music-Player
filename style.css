@@ -61,14 +61,17 @@ nav {
   padding: 15px;
 }
 
+#songElem > img {
+  height: 300px;
+  object-fit: cover;
+}
+
 #content > button {
-    box-shadow: 0px 0px 15px 11px #0000001c;
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    margin-top: 15px;
-    width: 100%;
-    color: white;
+  margin-top: 15px;
+  background: transparent;
+  color: white;
+  border: none;
+  text-decoration: underline;
 }
 
 #bottomBarControls {
@@ -83,6 +86,16 @@ nav {
     align-items: center;
 }
 
-#myProgressBar {
-    width: 80vw;
+.audio {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 100px;
+}
+
+.audioBottom {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 100px;
+  width: 80%;
+  margin: auto;
 }

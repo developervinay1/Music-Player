@@ -28,6 +28,22 @@ let allSongsArray = [
     }
 ];
 
+
+let currentSongIndex = 0;
+let audioElem = new Audio(allSongsArray[currentSongIndex].songPath);
+
+const loopAudioElement = document.getElementById("loopSong");
+
+// Function to play the next song
+function playNextSong() {
+    currentSongIndex = (currentSongIndex + 1) % allSongsArray.length;
+    loopAudioElement.src = allSongsArray[currentSongIndex].songPath;
+    loopAudioElement.play();
+}
+
+// Start playing the first song
+// audioElem.play();
+
 let songIndex = 0;
 let audioElement = new Audio(songs[songIndex].songsPath);
 let songsList = document.getElementById("songsList");
@@ -35,7 +51,7 @@ let masterPlay = document.getElementById("bottomPlayBtn");
 let myProgressBar = document.getElementById("myProgressBar");
 
 songs.map((data) => {
-    songsList.innerHTML += `<div id="songElem">
+      songsList.innerHTML += `<div id="songElem">
         <img src=${data.coverPath} alt=${data.name} />
         <div id="content">
             <audio controls class="audio songAudioPlayer" id="songAudioPlayer">
@@ -66,4 +82,10 @@ songAudioPlayer.forEach((player) => {
     player.addEventListener("pause", () => {
         player.style.width = "20%";
     });
+});
+
+
+
+document.getElementById("loopSong").addEventListener("ended", function () {
+    playNextSong();
 });

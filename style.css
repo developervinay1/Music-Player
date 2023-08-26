@@ -97,3 +97,25 @@ nav {
   border-radius: 100px;
   transition: .2s all ease-in-out;
 }
+
+#loop {
+  padding: 2% 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#loop > button {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 500px;
+  transition: .3s ease-in-out all;
+}
+
+
+#loop > button:hover {
+  background-color: white;
+  color: black;
+}

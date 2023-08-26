@@ -25,8 +25,19 @@
             </div>
         </nav>
     </div>
+
+    <div id="loop">
+        <h2>Loop Below Songs</h2>
+        <button onclick="audioElem.play()">Start Loop</button>
+    </div>
     <div id="songsList">
         <!-- Songs List Will be Shown Here -->
+    </div>
+
+    <div id="bottomLoop">
+        <audio controls id="loopSong">
+            <source src="./songs/naar.mp3">
+        </audio>
     </div>
 </body>
 <script src="script.js"></script>

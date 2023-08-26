@@ -119,3 +119,27 @@ nav {
   background-color: white;
   color: black;
 }
+
+#bottomLoop {
+  background-color: rgb(31, 31, 31) ;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 20px ;
+}
+
+#bottomLoop > h3 {
+  font-weight: 400;
+  text-align: center;
+}
+
+#looSongName{
+  font-weight: bold;
+}
+
+#bottomLoop > audio {
+  border-radius: 100px;
+}

@@ -20,10 +20,12 @@ let songs = [
 let allSongsArray = [
     {
         id: 1,
+        name: "Naar",
         songPath: "./songs/naar.mp3"
     },
     {
         id: 2,
+        name: "Toota Jo Kabhi Taara",
         songPath: "./songs/tara.mp3"
     }
 ];
@@ -33,6 +35,7 @@ let currentSongIndex = 0;
 let audioElem = new Audio(allSongsArray[currentSongIndex].songPath);
 
 const loopAudioElement = document.getElementById("loopSong");
+const loopSongName = document.getElementById("looSongName");
 
 // Function to play the next song
 function playNextSong() {
@@ -40,6 +43,7 @@ function playNextSong() {
     currentSongIndex = (currentSongIndex + 1) % allSongsArray.length;
     // updating audio loop source
     loopAudioElement.src = allSongsArray[currentSongIndex].songPath;
+    loopSongName.innerText = allSongsArray[currentSongIndex].name;
     // Play the song
     loopAudioElement.play();
 }

@@ -20,8 +20,8 @@ body {
 }
 
 svg {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 }
 
 nav {
@@ -55,6 +55,8 @@ nav {
 
 #songElem > img {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 #songElem > #content {
@@ -66,11 +68,6 @@ nav {
   padding: 0 15px;
 }
 
-#songElem > img {
-  height: 300px;
-  object-fit: cover;
-}
-
 #songInfoContent > button {
   margin-top: 15px;
   background: transparent;
@@ -80,22 +77,22 @@ nav {
 }
 
 #bottomBarControls {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 2% 0;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2% 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .audio {
   padding: 4px;
   width: 20%;
   border-radius: 100px;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 #loop {
@@ -111,9 +108,8 @@ nav {
   padding: 10px 20px;
   border: 1px solid white;
   border-radius: 500px;
-  transition: .3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
 }
-
 
 #loop > button:hover {
   background-color: white;
@@ -121,14 +117,14 @@ nav {
 }
 
 #bottomLoop {
-  background-color: rgb(31, 31, 31) ;
+  background-color: rgb(31, 31, 31);
   position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 20px 20px ;
+  padding: 20px 20px;
 }
 
 #bottomLoop > h3 {
@@ -136,7 +132,7 @@ nav {
   text-align: center;
 }
 
-#looSongName{
+#looSongName {
   font-weight: bold;
 }
 

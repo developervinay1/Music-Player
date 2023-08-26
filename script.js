@@ -54,7 +54,7 @@ let masterPlay = document.getElementById("bottomPlayBtn");
 let myProgressBar = document.getElementById("myProgressBar");
 
 songs.map((data) => {
-      songsList.innerHTML += `<div id="songElem">
+      return songsList.innerHTML += `<div id="songElem">
         <img src=${data.coverPath} alt=${data.name} />
         <div id="content">
             <audio controls class="audio songAudioPlayer" id="songAudioPlayer">
